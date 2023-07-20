@@ -428,7 +428,7 @@ img {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     justify-content: space-around;
     align-items: center;
-    gap: 40px;
+    gap: 25px;
     width: 100%;
     margin: 0 auto;
     text-align: center;
@@ -436,17 +436,18 @@ img {
 
 .single_btn {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     border: 1px solid #fff;
-    padding: 10px 20px;
+    padding: 4px 8px;
     border-radius: 40px;
-    gap: 12px;
+    gap: 10px;
     transition: .4s;
 }
 
 .single_btn:hover {
     border: 1px solid #FF42A5;
+    cursor: pointer;
 }
 
 .single_btn:hover p {
@@ -459,7 +460,7 @@ img {
 }
 
 .single_btn img {
-    width: 60px;
+    width: 50px;
 }
 
 
@@ -526,7 +527,7 @@ img {
 
 .footer_nav ul {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     gap: 20px;
 }
