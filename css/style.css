@@ -99,6 +99,10 @@ img {
     gap: 20px;
 }
 
+ul.navbar a {
+    color: #494949;
+}
+
 .button-menu {
     display: flex;
     gap: 15px;
