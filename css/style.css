@@ -12,10 +12,9 @@
     font-family: 'Work Sans', sans-serif;
 }
 
-body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Work Sans', sans-serif;
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
 }
 
 h1 {
@@ -31,14 +30,8 @@ h3 {
 }
 
 img {
-    width: 100%;
+    width: 50%;
 }
-
-.container {
-    width: 1280px;
-    margin: 0 auto;
-}
-
 
 .com_title {
     font-weight: 800;
@@ -51,36 +44,27 @@ img {
 }
 
 .section_padding {
-    padding: 100px 20px 50px;
+    padding: 100px 50px 50px;
 }
 
-/* ===================
-    Header section
-==================== */
+/*=========================
+====== header-section ======
+===========================*/
 .header-section {
+    height: auto;
+    padding: 20px 30px;
     background: #FFF;
     box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
-    width: 100%;
-    height: 100px;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    overflow: hidden;
-
-}
-
-.header_top {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    height: 100%;
 }
 
 .logo a {
-    display: inline-flex;
+    display: flex;
     align-items: center;
     gap: 10px;
+}
+
+.logo img {
+    width: 60px;
 }
 
 .logo h3 {
@@ -97,8 +81,11 @@ img {
     -webkit-text-fill-color: transparent;
 }
 
-.logo img {
-    width: 50px;
+.header_top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
 }
 
 .menu {
@@ -107,56 +94,41 @@ img {
     align-items: center;
 }
 
-.header_right {
-    width: 100%;
-    justify-content: flex-end;
-    align-items: center;
+.navbar {
     display: flex;
-}
-
-ul.navbar {
-    display: flex;
-    gap: 30px;
-}
-
-ul.navbar li a {
-    color: #3C354F;
-    font-weight: 500;
-    font-size: 18px;
+    gap: 20px;
 }
 
 .button-menu {
     display: flex;
-    font-size: 18px;
-    font-weight: 500;
     gap: 15px;
-    border-radius: 8px;
-    background: rgba(11, 2, 35, 0.10);
-    padding: 10px 20px;
     align-items: center;
-    justify-content: center;
+    background: #cacaca;
+    padding: 10px 25px;
+    border-radius: 10px;
 }
 
-.button-menu i {
-    font-size: 24px;
+.button-menu li a {
+    color: #0B0223;
 }
 
-.button-menu i.icon-red {
-    color: #F61C0D;
-    ;
+.icon-red {
+    color: #FF42A5;
 }
 
-/* ===================
-    Hero section
-==================== */
+/*=========================
+====== hero_section ======
+===========================*/
 .hero_section {
     padding: 80px 20px;
+    width: 100%;
+    height: 100%;
 }
 
 .hero_banner_area {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
     gap: 60px;
 }
 
@@ -219,41 +191,54 @@ ul.navbar li a {
 }
 
 .hero_img {
-    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-
-/* ===================
-    Gamer section
-==================== */
-.gamer-section {
-    background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
+.hero_img img {
+    width: 60%;
 }
 
+.hero_img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero_img img {
+    width: 60%;
+}
+
+/*=========================
+====== gamer-section ======
+===========================*/
 .gamer_content {
     display: flex;
-    gap: 50px;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
+    gap: 40px;
 }
 
-.gamer_img {
-    width: 700px;
+.gamer_img img {
+    width: 85%;
 }
 
 .gamer_text_area {
-    text-align: end;
-    line-height: normal;
+    text-align: right;
 }
 
 .gamer_text_area p {
+    padding: 20px 0;
     color: #534C64;
-    text-align: right;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
     line-height: 30px;
-    margin: 20px 0;
+}
+
+.gamer_img {
+    flex: 1;
 }
 
 .gamer_text_area h4 span {
@@ -267,47 +252,49 @@ ul.navbar li a {
 
 .gamer_text_area h4 {
     color: #534C64;
-    font-family: Work Sans;
-    font-size: 32px;
-    font-style: normal;
+    font-size: 25px;
     font-weight: 700;
     line-height: 45px;
     margin-top: 30px;
 }
 
-/* ===================
-    Online game
-==================== */
+
+
+/*=========================
+====== online_game======
+===========================*/
+
 .section_title {
     text-align: center;
-
+    margin-bottom: 50px;
 }
 
 .section_title h2 {
-    color: #0B0223;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-}
-
-.section_title p {
-    color: #534C64;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 30px;
+    padding-bottom: 20px;
 }
 
 .game_items {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 30px;
-    margin-top: 80px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.single_game {
+    width: 100%;
+}
+
+.game_image img {
+    width: 100%;
+    height: 100%;
+
 }
 
 .game_image {
     position: relative;
+    height: 350px;
+
 }
 
 .single_game p {
@@ -347,11 +334,15 @@ ul.navbar li a {
     top: 0;
     z-index: -1;
     opacity: .6;
+    border-radius: 15px;
 }
 
 .game_image:hover .overlay {
     height: 100%;
     cursor: pointer;
+    border: 2px solid #FF42A5;
+    border-radius: 16px;
+
 }
 
 .overlay i {
@@ -377,24 +368,20 @@ ul.navbar li a {
     -webkit-text-fill-color: transparent;
 }
 
-
-
-
-
-
-/* ===================
-    online_install
-==================== */
+/*=========================
+====== online_install======
+===========================*/
 .game_install {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    gap: 60px;
+    justify-content: space-between;
 }
 
 .ins_content {
-    width: 340px;
-    text-align: right;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }
 
 .ins_content h3 {
@@ -411,12 +398,9 @@ ul.navbar li a {
 
 .ins_img {
     position: relative;
-    margin-bottom: 100px;
 }
 
 .big_img {
-    width: 550px;
-    height: 600px;
     position: relative;
 }
 
@@ -427,76 +411,56 @@ ul.navbar li a {
 
 .small_img {
     position: absolute;
-    bottom: -77px;
-    left: -27%;
+    bottom: -49px;
+    left: -20%;
 
 }
 
+.small_img img {
+    width: 70%;
+}
 
-
-
-
-
-
-
-
-/* ===================
-    footer_button
-==================== */
+/*=========================
+====== Footer btn section ======
+===========================*/
 .button_list {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 20px;
-    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    justify-content: space-around;
     align-items: center;
+    gap: 40px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .single_btn {
     display: flex;
+    justify-content: center;
     align-items: center;
-    gap: 15px;
+    border: 1px solid #fff;
+    padding: 10px 20px;
+    border-radius: 40px;
+    gap: 12px;
+    transition: .4s;
+}
+
+.single_btn:hover {
+    border: 1px solid #FF42A5;
+}
+
+.single_btn:hover p {
+    color: #FF42A5;
+}
+
+.footer_button.section_padding {
+    text-align: center;
+    margin: 0 auto;
 }
 
 .single_btn img {
     width: 60px;
-    height: 60px;
 }
-
-.single_btn p {
-    color: #0B0223;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-}
-
-.single_btn {
-    display: inline-flex;
-    align-items: center;
-    gap: 15px;
-    border: 1px solid #fff;
-    padding: 10px 25px;
-    border-radius: 26px;
-    transition: .5s;
-}
-
-.single_btn img {
-    width: 40px;
-    height: 40px;
-}
-
-.single_btn:hover {
-    border: 1px solid #FF55AE;
-    cursor: pointer;
-}
-
-.single_btn:hover p {
-    color: #FF55AE;
-}
-
-
-
-
 
 
 
@@ -508,11 +472,17 @@ ul.navbar li a {
 }
 
 .footer_content {
-    width: 600px;
+    width: 100%;
     margin: 0 auto;
     text-align: center;
 }
 
+.footer_section .logo a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+}
 
 .footer_content .logo h3 {
     color: #fff;
@@ -542,7 +512,7 @@ ul.navbar li a {
 }
 
 .footer_icon_menu ul {
-    display: flex;
+    /* display: flex; */
     justify-content: center;
     align-items: center;
     gap: 20px;
@@ -576,65 +546,192 @@ ul.navbar li a {
     font-weight: 500;
     line-height: normal;
     padding: 20px 0;
+    margin-top: 30px;
 }
 
 
 
+/*=========================
+====== Media Query ======
+===========================*/
+@media only screen and (max-width: 1024px) {
+    .button_area {
+        gap: 10px
+    }
+
+    .primary-btn a,
+    .second-btn a {
+        font-size: 18px;
+        font-weight: normal;
+    }
+
+    .gamer_content {
+        flex-direction: column;
+    }
+}
 
 
+/* ============== */
+@media only screen and (max-width: 992px) {
+    .hero_banner_area {
+        flex-direction: column-reverse;
+        padding: 20px;
+    }
+}
+
+/* ============== */
+@media only screen and (max-width: 768px) {
+    .hero_section {
+        padding: 40px 20px;
+
+    }
+
+    .section_padding {
+        padding: 80px 30px;
+    }
+
+    h1 {
+        font-size: 60px;
+    }
+
+    h2 {
+        font-size: 35px
+    }
+
+    h3 {
+        font-size: 25px
+    }
+
+    .hero_banner_area {
+        flex-direction: column-reverse;
+        padding: 20px;
+    }
+
+    .header-section {
+        width: 100%;
+    }
+
+    .header_top {
+        flex-direction: column;
+    }
+
+    .header_right {
+        margin-top: 30px;
+    }
+
+    .hero_img img {
+        width: 60%;
+    }
+
+    .gamer_img img {
+        width: 100%;
+    }
+
+    .game_install {
+        flex-direction: column;
+    }
+
+    .ins_img {
+        position: relative;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    .big_img {
+        text-align: right;
+
+    }
+
+    .big_img img {
+        width: 60%;
+        height: 60%;
+    }
+
+    .small_img {
+        position: absolute;
+        bottom: -60px;
+        left: 12%;
+    }
+
+    .button_list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+
+    }
+
+    .single_btn img {
+        width: 40px;
+    }
 
 
+}
 
-/* ===================
-    
-==================== */
+/* ============== */
+@media only screen and (max-width: 600px) {
+    .menu {
+        flex-direction: column;
+    }
 
+    .hero_img img {
+        width: 80%;
+    }
 
+    .game_image {
+        height: 400px;
+    }
 
+    .big_img {
+        position: relative;
+        text-align: right;
+        height: auto;
+        width: 350px;
+    }
 
+    .big_img img {
+        width: 65%;
+        height: 300px;
+    }
 
+    .small_img {
+        position: absolute;
+        bottom: -50px;
+        left: 2%;
+        width: 230px;
+    }
 
+    .button_list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 10px;
+    }
 
+    .single_btn img {
+        width: 30px;
+    }
 
+    .single_btn {
+        padding: 10px 2px;
+        gap: 2px;
+    }
 
+    .footer_menu ul {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
 
-/* ===================
-    
-==================== */
+    .footer_nav ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
 
-
-
-
-
-
-
-
-
-
-
-/* ===================
-    
-==================== */
-
-
-
-
-
-
-
-
-/* ===================
-    
-==================== */
-
-
-
-
-
-
-
-
-
-/* ===================
-    
-==================== */
+    .footer_icon_menu ul {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+        justify-self: unset;
+        justify-content: center;
+    }
+}
